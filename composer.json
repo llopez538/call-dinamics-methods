@@ -1,0 +1,17 @@
+{
+    "name": "codekrakenn/magic-methods",
+    "type": "project",
+    "license": "MTI",
+    "authors": [
+        {
+            "name": "Leonard Lopez",
+            "email": "masasss.the.end@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Styde\\": "src/"
+        }
+    }
+}
