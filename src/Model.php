@@ -33,6 +33,16 @@ abstract class Model
 
     public function getAttribute($name)
     {
+        $value = $this->getAttributeValue($name);
+
+        $method = 'get'.Str::studly($name).'Attribute';
+        exit(method_exists($this ,$method));
+
+        return $value;
+    }
+    
+    public function getAttributeValue($name)
+    {
         if (array_key_exists($name, $this->attributes)) {
             return $this->attributes[$name];
         }
